@@ -106,3 +106,45 @@ python main.py --help
 - Звук формируется по смещению одной точки мембраны. Распространение звуковых волн в воздухе не моделируется.
 - Нормализация сигнала не позволяет напрямую судить об абсолютной амплитуде физических колебаний.
 
+## Примеры
+
+Все примеры лежат в папке [`examples/`](examples/)
+
+### 1. Kick — глубокий бас-барабан
+
+```bash
+python main.py -R 0.25 -N 140 -T 1100 -rho 0.35 -g 12 -t 1.0
+```
+
+<audio src="examples/01_kick" controls></audio>
+
+---
+
+### 2. Snare — быстрый малый барабан
+
+```bash
+python main.py -R 0.14 -N 160 -T 3500 -rho 0.15 -g 140 -t 0.25
+```
+
+<audio src="examples/02_snare" controls></audio>
+
+---
+
+### 3. Tom — универсальный том-том
+
+```bash
+python main.py -R 0.15 -N 140 -T 1800 -rho 0.25 -g 16 -t 0.8
+```
+
+<audio src="examples/03_tom" controls></audio>
+
+---
+
+
+### 4. Conga — тёплый латиноамериканский тон
+
+```bash
+python main.py -R 0.14 -N 140 -T 1500 -rho 0.28 -g 18 -t 0.9
+```
+
+<audio src="examples/04_conga" controls></audio>
